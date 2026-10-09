@@ -27,3 +27,6 @@ display: flex;
 justify-content: flex-start; /* Change to 'flex-start' for left alignment */
 margin: 50px;
 }
+.spaced {
+letter-spacing: 10px;
+}

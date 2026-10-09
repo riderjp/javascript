@@ -1,5 +1,5 @@
 body {
-    background-color:rgb(103, 71, 87);
+    background-color:rgb(255, 255, 255);
 }
 .red {
     color:red;
@@ -12,18 +12,16 @@ body {
 }
 p {
     font-family: "Lucida Console", "Courier New", monospace;
-    border: 2px solid rgb(0, 0, 0);
-    padding: 30px;
-    margin: 50px;
-    color: #ffb0b0;
+    border: 2px solid rgb(129, 129, 129);
+    margin: 2px;
 }
 h1 {
     font-family: "Lucida Console", "Courier New", monospace;
-    color:#ffb0b0;
-      border: 2px solid rgb(0, 0, 0);
-      padding: 30px;
-      margin: 50px;
+    color:#000000;
+      border: 2px solid rgb(129, 129, 129);
+      margin: 2px;
 }
+      
 .image-container {
 display: flex;
 justify-content: flex-start; /* Change to 'flex-start' for left alignment */

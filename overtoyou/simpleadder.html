@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Default Page</title>
+        <link rel="stylesheet" href="styles.css">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/defaulthtml.html">Default Page</a></li>
+                <li><a href="/myfirstjs.html">myfirstjs</a></li>
+                <li><a href="/overtoyou/overtoyou.html">Over to You (JavaScript)</a></li>
+                <li><a href="/overtoyou/5die.html">5 Die challenge</a></li>
+                <li><a href="/overtoyou/simpleadder.html">Simple adder challenge</a></li>
+                <li><a href="/overtoyou/portfoliograde.html">Portfolio grade challenge</a></li>
+            </ul>
+        </nav>
+    </head>
+    <body>
+        <input type="number" id="num1" value="5">
+        <input type="number" id="num2" value="4">
+        <button onclick="add()">Add</button>
+        <script>
+            function add() {
+                var num1 = document.getElementById("num1").value;
+                var num2 = document.getElementById("num2").value;
+                var sum = parseInt(num1) + parseInt(num2);
+                alert("The sum is: " + sum);
+            }
+        </script>
+    </body>
+</html>

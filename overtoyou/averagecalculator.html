@@ -17,17 +17,19 @@
         </nav>
     </head>
     <body>
-        <input type="number" id="numtoave" value="0">
+        <input type="number" id="numtoave" value="3">
         <button onclick="enter()">Enter numbers</button>
         <button onclick="average()">Average</button>
         <script>
+            var toave = document.getElementById("numtoave").value;
             function enter() {
-                var toave = document.getElementById("numtoave").value;
                 let total = 0
-                for (numtoave) {
+                for (let i = 0; i < Number(toave); i++) {
                     let num = parseFloat(prompt(`Enter number ${i}:`));
                     total = total + num
                 }
+                alert(total)
+                return(Number(total))
             }
             function average() {
                 let ave = total / toave

@@ -20,6 +20,7 @@
         <button onclick="tograde()">Grade</button>
         <script>
             function tograde() {
+                var mark = document.getElementById("mark").value;
                 if (mark == 0) {
                     grade = "U";
                 } else if (mark < 5) {

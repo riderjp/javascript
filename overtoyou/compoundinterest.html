@@ -32,8 +32,8 @@
                 alert("£" + balance + " starting balance - " + interestpercent + "% interest rate (" + interestdecimal + ")")
                 let i = 1
                 while (balance < desired) {
-                    balance = balance * (interestdecimal + 1)
-                    alert("Year " + i + ": New balance = " + current + " + (" + current + "*" + interestdecimal + ") = £" + balance)
+                    newbalance = balance * (interestdecimal + 1)
+                    alert("Year " + i + ": New balance = " + balance + " + (" + balance + "*" + interestdecimal + ") = £" + newbalance)
                     i = i + 1
                 }
                 alert("Your balance is: " + balance)

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Compound interest challenge</title>
+        <link rel="stylesheet" href="styles.css">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/defaulthtml.html">Default Page</a></li>
+                <li><a href="/myfirstjs.html">myfirstjs</a></li>
+                <li><a href="/overtoyou/overtoyou.html">Over to You (JavaScript)</a></li>
+                <li><a href="/overtoyou/5die.html">5 die challenge</a></li>
+                <li><a href="/overtoyou/simpleadder.html">Simple adder challenge</a></li>
+                <li><a href="/overtoyou/portfoliograde.html">Portfolio grade challenge</a></li>
+                <li><a href="/overtoyou/averagecalculator.html">Average calculator challenge</a></li>
+                <li><a href="/overtoyou/compoundinterest.html">Compound interest challenge</a></li>
+            </ul>
+        </nav>
+    </head>
+    <body>
+        <input type="number" id="current" value="100">
+        <input type="number" id="interest" value="4">
+        <input type="number" id="desired" value="112">
+        <button onclick="run()">Calculate</button>
+        <script>
+            function run() {
+                var current = document.getElementById("current").value;
+                var interestpercent = document.getElementById("interest").value;
+                var desired = document.getElementById("desired").value;
+                let interestdecimal = interestpercent / 100
+                let balance = current
+                alert("£" + balance + " starting balance - " + interestpercent + "% interest rate (" + interestdecimal + ")")
+                let i = 1
+                while (balance < desired) {
+                    balance = balance * (interestdecimal + 1)
+                    alert("Year " + i + ": New balance = " + current + " + (" + current + "*" + interestdecimal + ") = £" + balance)
+                    i = i + 1
+                }
+                alert("Your balance is: " + balance)
+            }
+        </script>
+    </body>
+</html>

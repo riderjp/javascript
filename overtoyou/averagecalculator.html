@@ -22,18 +22,18 @@
         <button onclick="average()">Average</button>
         <script>
             var toave = document.getElementById("numtoave").value;
+            let total = 0
             function enter() {
-                let total = 0
                 for (let i = 0; i < Number(toave); i++) {
                     let num = parseFloat(prompt(`Enter number ${i}:`));
                     total = total + num
                 }
-                alert(total)
+                alert("The total is: " + total + "")
                 return(Number(total))
             }
             function average() {
                 let ave = total / toave
-                alert(ave);
+                alert("The average is: " + ave + "");
             }
         </script>
     </body>

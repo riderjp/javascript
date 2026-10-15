@@ -18,9 +18,9 @@
         </nav>
     </head>
     <body>
-        <input type="number" id="current" value="100">
-        <input type="number" id="interest" value="4">
-        <input type="number" id="desired" value="112">
+        <input type="number" id="current" value="0">
+        <input type="number" id="interest" value="0">
+        <input type="number" id="desired" value="0">
         <button onclick="run()">Calculate</button>
         <script>
             function run() {
@@ -31,9 +31,11 @@
                 let balance = current
                 alert("£" + balance + " starting balance - " + interestpercent + "% interest rate (" + interestdecimal + ")")
                 let i = 1
+                let newbalance = current
                 while (balance < desired) {
-                    newbalance = balance * (interestdecimal + 1)
+                    newbalance = newbalance * (interestdecimal + 1)
                     alert("Year " + i + ": New balance = " + balance + " + (" + balance + "*" + interestdecimal + ") = £" + newbalance)
+                    balance = newbalance
                     i = i + 1
                 }
                 alert("Your balance is: " + balance)

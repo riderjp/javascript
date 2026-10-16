@@ -1,5 +1,5 @@
 body {
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(150, 150, 200);
 }
 .red {
     color:red;
@@ -12,14 +12,14 @@ body {
 }
 p {
     font-family: "Lucida Console", "Courier New", monospace;
-    border: 2px solid rgb(129, 129, 129);
-    margin: 2px;
+    margin: 15px;
+    padding: 5px;
 }
 h1 {
     font-family: "Lucida Console", "Courier New", monospace;
     color:#000000;
-      border: 2px solid rgb(129, 129, 129);
-      margin: 2px;
+    padding: 10px;
+    margin: 10px;
 }
       
 .image-container {
@@ -29,4 +29,16 @@ margin: 50px;
 }
 .spaced {
 letter-spacing: 10px;
+}
+a:link, a:visited {
+  background-color: rgb(100, 200, 200);
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(150, 200, 200);
 }
